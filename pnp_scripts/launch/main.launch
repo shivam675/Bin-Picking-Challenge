@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+
+
+<!-- Manipulation everything -->
+
+    <include file="$(find pnp_manipulation)/launch/bringup.launch"/>
+
+<!-- Navigation everything -->
+
+    <include file="$(find pnp_gazebo)/launch/sim.launch"/>
+
+
+    <include file="$(find pnp_perception)/launch/fo3d.launch"/>
+
+    <!-- <node name="obj_pnp" pkg="pnp_scripts" type="obj_pick_place.py" output="screen"/> -->
+
+
+
+</launch>
+
+
+
